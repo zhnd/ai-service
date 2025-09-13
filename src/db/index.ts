@@ -3,7 +3,6 @@ import { drizzle as drizzleD1 } from "drizzle-orm/d1";
 import { drizzle as drizzleSqlite } from "drizzle-orm/libsql/node";
 
 export const getDb = () => {
-  // 检查是否在 Cloudflare Workers 环境中
   try {
     const { env } = getCloudflareContext();
     // 如果能获取到 Cloudflare 上下文，说明在 Workers 环境中，使用 D1
