@@ -1,0 +1,14 @@
+main = ".open-next/worker.js"
+name = "ai-service"
+compatibility_date = "2025-03-25"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-service-dev"
+database_id = "f338415e-86be-42d5-8b94-45b9c2c9464e"
+migrations_dir = "drizzle"
