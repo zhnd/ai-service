@@ -2,6 +2,7 @@ import "dotenv/config";
 import { defineConfig } from "drizzle-kit";
 
 const isDevelopment = process.env.NODE_ENV === "development";
+console.log("isDevelopment", isDevelopment);
 
 export default defineConfig({
   out: "./drizzle",
@@ -9,6 +10,7 @@ export default defineConfig({
   dialect: "sqlite",
   ...(isDevelopment
     ? {
+        driver: "d1-http",
         dbCredentials: {
           url: "file:./local.db",
         },
