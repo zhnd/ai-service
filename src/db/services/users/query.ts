@@ -7,7 +7,7 @@ import { ListUsersInput, ListUsersOutput } from "./types";
 export async function getUsers(
   input: ListUsersInput
 ): Promise<ListUsersOutput> {
-  const db = getDb();
+  const db = await getDb();
   const { pageIndex, pageSize, name } = input;
 
   const conditions: SQL[] = [];

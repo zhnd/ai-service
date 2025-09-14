@@ -12,6 +12,6 @@ enabled = true
 
 [[d1_databases]]
 binding = "DB"
-database_name = "ai-service-dev"
-database_id = "f338415e-86be-42d5-8b94-45b9c2c9464e"
-migrations_dir = "drizzle"
+database_name = "ai-service-prod"
+database_id = "777fda96-9f17-4487-b0a2-38629ebc865a"
+migrations_dir = "./drizzle"

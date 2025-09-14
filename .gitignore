@@ -47,3 +47,4 @@ local.db
 local.db-journal
 
 .wrangler
+cloudflare-env.d.ts
